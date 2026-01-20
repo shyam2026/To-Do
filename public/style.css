@@ -86,7 +86,7 @@ body {
 .main-area {
   position: relative;
   z-index: 2;
-  padding: 18px;
+  padding: 40px;
   padding-bottom: 90px; /* footer space */
 }
 
@@ -96,7 +96,7 @@ body {
   padding: 18px 20px;
   border-radius: 16px;
   width: fit-content;
-  margin: 20px auto;
+  margin: 140px auto;
   text-align: center;
 }
 
@@ -267,26 +267,34 @@ body {
 .delete-btn:hover { opacity: 1; }
 
 /* Footer */
-.footer {
+.footer{
   position: fixed;
-  left: 0px;
-  right: 0px;
-  bottom: 2px;
-  height: 42px;
-  background:#f0ddbf;
-;
-  border-top: 1px solid rgba(0,0,0,0.08);
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 12px;
+
+  width: 92%;
+  max-width: 720px;
+  height: 60px;
+
+  background: rgba(255,255,255,0.7);
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 14px;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 14px;
+
+  padding: 0 18px;
   z-index: 15;
 }
 
+
 .footer-left,
 .footer-right {
-  font-size: 12px;
+  font-size: 15px;
   color: #000;
+  font-weight: 550;
 }
 
 .footer-right {
@@ -301,22 +309,23 @@ body {
 
 .linkedin-icon {
   display: inline-flex;
-  width: 28px;
-  height: 28px;
-  border-radius: 6px;
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
   background: #0A66C2;
   color: white;
   font-weight: bold;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
+  font-size: 16px;
 }
+
 
 /* Floating + Button (above footer) */
 .fab {
   position: fixed;
   right: 18px;
-  bottom: 54px;
+  bottom: 80px;
   width: 55px;
   height: 55px;
   border-radius: 50%;
