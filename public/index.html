@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To Do List</title>
+  <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+
+  <div class="dots-layer" id="dotsLayer"></div>
+
+  <header class="top-header">
+    <div class="left-title">To Do List</div>
+
+    <div class="right-info">
+      <input id="nameInput" class="name-input" type="text" placeholder="Your name" maxlength="8"/>
+      <div class="dt-boxes">
+        <div class="dt-box" id="todayDate"></div>
+        <div class="dt-box" id="liveTime"></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-area">
+    <div class="empty-state" id="emptyState">
+      <div class="empty-title">To Do List</div>
+      <div class="empty-subtitle">Click On Plus Icon Below To Start</div>
+    </div>
+
+    <div class="cards-wrap" id="cardsWrap"></div>
+  </main>
+
+  <div class="modal" id="modal">
+    <div class="modal-box">
+      <div class="modal-title">Create Date Card</div>
+
+      <div class="modal-form">
+        <label class="modal-label">Select Date</label>
+        <input class="modal-date" type="date" id="newCardDate" required />
+        <button class="modal-btn" id="createCardBtn">Create</button>
+      </div>
+
+      <button class="modal-close" id="modalClose">Close</button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-left"><i><b>Created By Shyam</b></i></div>
+
+    <div class="footer-right">
+      <b>Follow On</b>
+      <a
+        class="linkedin-link"
+        href="https://www.linkedin.com/in/shyam191411"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Follow on LinkedIn"
+      >
+        <span class="linkedin-icon">in</span>
+      </a>
+    </div>
+  </footer>
+
+  <button class="fab" id="fabBtn">+</button>
+
+  <script src="./script.js"></script>
+</body>
+</html>
